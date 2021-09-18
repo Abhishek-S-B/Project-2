@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Payment page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/yourcode.js"></script>
+<style>
+body{
+	padding:0px;
+	margin:0px;	
+}
+
+.navbar{
+	position:relative;
+	overflow:visible;
+	
+	}
+.navbar a{
+	
+	margin:0px;
+	width:257px;
+	display:block;
+	float:left;
+	text-align:center;
+	padding:8px;
+	box-shadow:4px 10px #DADADA;
+	text-decoration:none;
+	
+	background-color:black;
+	color:white;
+	}	
+.navbar a:hover{
+		background-color:#CDC2C2;
+		color:black;
+		}
+.paybox{
+  left:20px;
+  top:30px;
+  position:relative;
+	}	
+input[type="checkbox"] {
+ 
+  box-sizing:border-box;
+  right:185px;
+  position:relative;
+  top:30px;
+	}
+
+input[type=date],input[type=month],input[type="text"]{
+  width:30%;
+  padding: 10px 5px;
+  margin: 10px 0px ;
+  display: block;
+  color:black;
+  box-sizing:border-box;
+  border: 2px solid #000;
+  position:relative;
+  top:20px;
+}
+
+select {	
+  text-align:center;
+  width:30%;
+  padding: 9px 5px;
+  margin: 10px 0px ;
+  display: block;
+  color:black;
+  box-sizing:border-box;
+  border: 2px solid #000;
+  position:relative;
+  top:20px;
+}
+label{
+	font-family:calibri;
+	font-size:20px;
+	position:relative;
+  top:28px;
+	}	
+button {
+	position:relative;
+	font-size:10px;
+	top:70px;
+	right:200px;
+  font-weight:bold;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  text-decoration:none;
+}
+button a:visited{
+	color:black;
+	}
+button[type="pay"] a:visited{
+	color:black;
+	}
+button[type="submit"] a:visited{
+	color:black;
+	}
+button:hover {
+  background-color:#C9C9D9;
+  color:black;
+}						
+</style>
+</head>
+<body>
+<nav>
+<div class="navbar">
+<a href="bookflights.html">BOOK FLIGHTS</a>
+<a href="checkin.html">WEB-CHECK IN</ul>
+<a href="flightstatus.html">FLIGHT STATUS</a>
+<a href="cancellation.html">CANCELLATION</a>
+<a  href="user.html">LOGOUT</a>
+</div>
+</nav>
+<div class="paybox">
+	<label><b>Payment Modes</b></label>	
+	<select>
+	<option>---SELECT PAYMENT MODE---</option>
+	<option>VISA</option>
+	<option>MASTERCARD</option>
+	<option>MAESTRO</option>
+	<option>PAYTM</option>
+	</select>
+	<label><b>CARD NUMBER</b></label>	
+	<input type="text" placeholder="Enter Card Number" maxlength="16" required>
+
+	<label><b>CVV</b></label>	
+	<input type="text" placeholder="Enter CVV" maxlength="3" required>
+
+	<label><b>CARD HOLDER'S Name</b></label>	
+	<input type="text" placeholder="Enter Card Holder's Name" required>
+	
+	<label><b>EXPIRY DATE</b></label>	
+	<input type="month" required>
+	<label style="font-size:15px; left:30px;"><b>I accept all terms & conditions</b></label>
+	<input type="checkbox" required>
+	
+	<button type="submit" onclick="mybook()"0><a href="eticket.html" style="text-decoration:none;">BOOK</a></button>
+	<button type="submit" onclick="transac()"><a href="booking.html" style="text-decoration:none;">BACK</a></button>
+</div>
+<script>
+function mybook(){
+	alert("Seat Booked!!")
+	}
+function transac(){
+	alert("Transaction Will Be Failed!!")
+	}
+</script>
+</body>
+</html>
+

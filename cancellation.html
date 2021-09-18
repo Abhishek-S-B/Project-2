@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cancellation page</title>
+<style>
+body{
+	padding:0px;
+	margin:0px;	
+}
+
+.navbar{
+	position:relative;
+	overflow:visible;
+	
+	}
+.navbar a{
+	
+	margin:0px;
+	width:257px;
+	display:block;
+	float:left;
+	text-align:center;
+	padding:8px;
+	box-shadow:4px 10px #DADADA;
+	text-decoration:none;
+	
+	background-color:black;
+	color:white;
+	}	
+.navbar a:hover{
+		background-color:#CDC2C2;
+		color:black;
+		}
+input[type=text] {
+  width:30%;
+  padding: 10px 5px;
+  margin: 10px 0px ;
+  display: block;
+  color:black;
+  left:20px;
+  box-sizing:border-box;
+  border: 2px solid #000;
+  position:relative;
+  top:20px;
+}	
+label{
+	font-family:calibri;
+	font-size:20px;
+	position:relative;
+  top:28px;
+  left:20px
+	}	
+button {
+	left:20px;
+	position:relative;
+	font-size:12px;
+	top:20px;
+  font-weight:bold;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  text-decoration:none;
+}
+button a:visited{
+	color:black;
+	}
+button[type="pay"] a:visited{
+	color:black;
+	}
+button[type="submit"] a:visited{
+	color:black;
+	}
+button:hover {
+  background-color:#C9C9D9;
+  color:black;
+}	
+input[type=date] {
+  width:30%;
+  left:20px;
+  padding: 10px 5px;
+  margin: 10px 0px ;
+  display: block;
+  color:black;
+  box-sizing:border-box;
+  border: 2px solid #000;
+  position:relative;
+  top:20px;
+}		
+</style>
+</head>
+<body>
+<nav>
+<div class="navbar">
+<a href="bookflights.html">BOOK FLIGHTS</a>
+<a href="checkin.html">WEB-CHECK IN</ul>
+<a href="flightstatus.html">FLIGHT STATUS</a>
+<a href="cancellation.html">CANCELLATION</a>
+<a  href="user.html">LOGOUT</a>
+</div>
+</nav>
+<div class="cancel">
+	<label><b>E-Tickets Number</b></label>	
+	<input type="text" placeholder="Enter Ticket Number" required>
+		<button type="submit" onclick="mybook()"	><a href="#" style="text-decoration:none;">Cancel Flight</a></button>
+</div>
+<script>
+function mybook(){
+	alert("Flight Cancelled")
+	}
+</script>
+</body>
+</html>

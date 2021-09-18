@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:0.5;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #000000;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  display:block;
+  width: 50%;
+}
+
+.container {
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+.signupbtn a:link,.signupbtn a:visited{
+	color:white;
+	}
+</style>
+<body>
+
+<form>
+  <div class="container">
+	  
+    <h1>SIGN UP</h1>
+    <p>Please fill in this form to create an account.</p>
+    <label for="name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Email" name="name" required>
+    
+    <label for="mobile"><b>Mobile Number</b></label>
+    <input type="text" placeholder="Enter Mobile Number" name="Mobile Number" required>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    <div class="clearfix">
+     <button type="reset" class="cancelbtn" value="reset">RESET</button>
+      <button type="submit" class="signupbtn"><a href="user.html" style="text-decoration:none">SIGN UP</a></button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
+
